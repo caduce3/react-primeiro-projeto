@@ -5,15 +5,19 @@
 .campo-texto label {
     display: block;
     margin-bottom: 8px;
-    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .campo-texto input {
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
     width: 100%;
     border: none;
     font-size: 24px;
     padding: 24px;
     box-sizing: border-box;
+    mix-blend-mode: normal;
 }
