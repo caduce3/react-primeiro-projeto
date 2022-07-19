@@ -18,15 +18,20 @@ const Formulario = () => {
         'Alcateia',
         'Grupo Ômega'
     ]
+
+    const aoSalvar = (evento) => {
+        evento.preventDefault() //não siga o comportamento padrão
+        console.log("Foi submetido")
+    }
     
     return (
         <section className="form">
-            <form>
+            <form onSubmit={aoSalvar}>
                 <h2>Preencha os dados e monte seu time para participar do hackathon UERN Natal.</h2>
-                <CampoTexto label="Nome" placeholder="Digite seu nome" />
-                <CampoTexto label="E-mail" placeholder="Digite seu período atual" />
+                <CampoTexto obrigatorio={true} label="Nome" placeholder="Digite seu nome" />
+                <CampoTexto obrigatorio={true} label="E-mail" placeholder="Digite seu período atual" />
                 <CampoTexto label="Imagem" placeholder="Digite o endereço da imagem" />
-                <ListaSuspensa label="Time" itens={times}/>
+                <ListaSuspensa obrigatorio={true} label="Time" itens={times}/>
                 <Botao>
                     Criar Card
                 </Botao>
