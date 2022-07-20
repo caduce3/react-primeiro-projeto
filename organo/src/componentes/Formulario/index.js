@@ -14,10 +14,7 @@ const Formulario = (props) => {
         'Team Progammer',
         'NASA',
         'Digital Divas',
-        'Submarine',
-        'The Warrios',
-        'Alcateia',
-        'Grupo Ômega'
+        'Submarine'
     ]
 
     const [nome, setNome] = useState('')
