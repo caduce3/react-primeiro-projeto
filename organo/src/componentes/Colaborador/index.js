@@ -1,14 +1,14 @@
 import './Card.css'
 
-const Colaborador = () => {
+const Colaborador = (props) => {
     return(
         <div className='colaborador'>
             <div className='cabecalho'>
-                <img src="https://github.com/caduce3.png" alt="Cadu Lucena"/>
+                <img src={props.imagem} alt={props.nome}/>
             </div>
             <div className='rodape'>
-                <h4>Cadu Lucena</h4>
-                <h5>cadu.ce3@gmail.com</h5>
+                <h4>{props.nome}</h4>
+                <h5>{props.email}</h5>
             </div>
         </div>
     )
